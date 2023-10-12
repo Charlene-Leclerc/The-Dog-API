@@ -12,7 +12,7 @@ const Navigation = () => {
                 </div>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
-                        <Nav.Link href="/">Accueil</Nav.Link>
+                        <Nav.Link href="/#home">Accueil</Nav.Link>
                         <Nav.Link href="/#about">A propos</Nav.Link>
                         <Nav.Link href="/#dog">Chiens</Nav.Link>
                         <Nav.Link href="/#cat">Chats</Nav.Link>

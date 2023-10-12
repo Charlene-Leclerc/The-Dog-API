@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { BASE_URL, API_KEY } from '../utils/API';
+import { BASE_URL, API_KEY } from '../../utils/API';
 import axios from 'axios';
 import BreedImage from './BreedImage';
-import Pagination from './Pagination'
+import Pagination from '../Pagination'
 
 const BreedList = () => {
     const [breeds, setBreeds] = useState([]);

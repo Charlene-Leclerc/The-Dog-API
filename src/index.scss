@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 @import './styles/nav.scss';
+@import './styles/dog.scss';
 @import './styles/home.scss';
 
 * {
@@ -23,6 +24,6 @@ html {
 
 section {
   min-height: 100vh;
-
+  padding: 10rem 9% 2rem;
 
 }

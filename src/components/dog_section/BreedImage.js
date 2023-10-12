@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { BASE_URL, API_KEY } from '../utils/API';
+import { BASE_URL, API_KEY } from '../../utils/API';
 
 const BreedImage = ({ breedID }) => {
     const [image, setImage] = useState([]);

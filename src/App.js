@@ -1,6 +1,6 @@
 import './App.scss';
 import Navigation from './components/Navigation';
-import Home from './pages/Home';
+import Page from './pages/Page';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <header>
         <Navigation />
       </header>
-      <Home />
+      <Page />
     </div>
   );
 }
