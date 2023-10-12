@@ -1,0 +1,48 @@
+@use "main";
+
+.navbar {
+    background: main.$peps-blue;
+    padding: 1rem;
+
+    .container {
+        max-width: 100% !important;
+        padding: 1rem 9%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        justify-content: space-between;
+
+
+        .navbar-brand {
+            font-size: 2rem;
+            margin-left: 5rem;
+            color: main.$text-color;
+            text-decoration: none;
+
+        }
+
+
+        .collapse {
+
+
+            .nav-link {
+                color: main.$text-color;
+                padding: 0.6rem;
+                font-size: 1.4rem;
+                text-decoration: none;
+
+                &:active,
+                &:hover {
+                    transform: scale(1.1);
+                    color: main.$span-color;
+                }
+            }
+        }
+
+        .navbar-nav {
+            font-size: 1.2rem;
+            margin-right: 1rem;
+
+        }
+    }
+}
