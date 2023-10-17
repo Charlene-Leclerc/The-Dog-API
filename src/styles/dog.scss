@@ -64,7 +64,7 @@
         font-size: 4rem;
         color: main.$text-color;
         text-align: center;
-        padding: 2rem;
+        padding-bottom: 5rem;
     }
 
     .container {
@@ -81,7 +81,7 @@
             border-radius: 2rem;
             text-align: center;
 
-            margin-top: 20px;
+            margin-top: 5rem;
             width: 280px;
             height: 400px;
             display: flex;
@@ -90,7 +90,8 @@
 
             h2 {
                 font-size: 2.4rem;
-                margin: 15px;
+
+
             }
 
             .dog-img {
@@ -111,6 +112,7 @@
                     &:hover {
                         transform: scale(1.1);
                         box-shadow: 0 0 3rem main.$peps-blue;
+                        cursor: pointer;
                     }
 
                 }

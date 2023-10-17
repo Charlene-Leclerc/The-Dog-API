@@ -1,22 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 
 const Navigation = () => {
+    const [activeLink, setActiveLink] = useState('home');
+
+    const handleClick = (link) => {
+        setActiveLink(link)
+        console.log(activeLink)
+    }
     return (
         <Navbar collapseOnSelect expand="sm">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Container>
                 <div className="brand-box">
 
-                    <Navbar.Brand href="/" className='navbar-brand'>MY DOG FRIENDLY</Navbar.Brand>
+                    <Link className='nav-brand' to='home' smooth={true} duration={100}>MY DOG FRIENDLY</Link>
                 </div>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
-                        <Nav.Link href="/#home">Accueil</Nav.Link>
-                        <Nav.Link href="/#about">A propos</Nav.Link>
-                        <Nav.Link href="/#dog">Chiens</Nav.Link>
-                        <Nav.Link href="/#cat">Chats</Nav.Link>
-                        <Nav.Link href="/#contact"> Contact</Nav.Link>
+                        <Link onClick={() => handleClick('home')}
+                            className={activeLink === 'home' ? 'nav-activ' : 'nav-link'}
+                            to='home' smooth={true} duration={100}>Accueil</Link>
+
+                        <Link onClick={() => handleClick('about')}
+                            className={activeLink === 'about' ? 'nav-activ' : 'nav-link'}
+                            to='about' smooth={true} duration={100}>A Propos</Link>
+                        <Link onClick={() => handleClick('dog')}
+                            className={activeLink === 'dog' ? 'nav-activ' : 'nav-link'}
+                            to='dog' smooth={true} duration={100}>Chiens</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -16,7 +16,7 @@
         justify-content: space-between;
 
 
-        .navbar-brand {
+        .nav-brand {
             font-size: 2rem;
             margin-left: 5rem;
             color: main.$text-color;
@@ -27,6 +27,11 @@
 
         .collapse {
 
+            .nav-activ {
+                color: main.$span-color;
+                text-decoration: underline;
+                font-size: 1.5rem;
+            }
 
             .nav-link {
                 color: main.$text-color;
@@ -34,12 +39,13 @@
                 font-size: 1.4rem;
                 text-decoration: none;
 
-                &:active,
                 &:hover {
-                    transform: scale(1.1);
+                    cursor: pointer;
                     color: main.$span-color;
                 }
             }
+
+
         }
 
         .navbar-nav {
