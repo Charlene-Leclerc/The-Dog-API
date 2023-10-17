@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import { BreedDataContext } from '../components/BreedDataContext';
 import BreedImage from '../components/dog_section/BreedImage';
 import BackNav from '../components/BackNav';
+import { LikeButton } from '@lyket/react';
 
 
 const BreedDescription = () => {
@@ -24,6 +25,7 @@ const BreedDescription = () => {
                         <p><span>Origin:</span> {breedData.origin}</p>
                         <p><span>Temperament:</span> {breedData.temperament}</p>
                         <p><span>Durée de vie:</span> {breedData.life_span}</p>
+                        <LikeButton />
 
                     </div>
 
