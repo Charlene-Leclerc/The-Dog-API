@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
 
         <Routes>
-          <Route exact path='/' element={<Page />} />
+          <Route exact path='The-Dog-API/' element={<Page />} />
           <Route path='/description' element={<BreedDescription />} />
         </Routes>
       </BrowserRouter>

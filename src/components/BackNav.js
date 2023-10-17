@@ -12,14 +12,11 @@ const BackNav = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Container>
                 <div className="brand-box">
-
                     <Link className='nav-brand' to='/' smooth={true} duration={100}>MY DOG FRIENDLY</Link>
                 </div>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
-
                         <Link to='/' > <FontAwesomeIcon icon={faRightFromBracket} style={{ color: "#ffffff", }} /></Link>
-
                     </Nav>
                 </Navbar.Collapse>
             </Container>

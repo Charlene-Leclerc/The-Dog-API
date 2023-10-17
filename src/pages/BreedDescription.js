@@ -4,8 +4,10 @@ import { BreedDataContext } from '../components/BreedDataContext';
 import BreedImage from '../components/dog_section/BreedImage';
 import BackNav from '../components/BackNav';
 
+
 const BreedDescription = () => {
     const { breedData } = useContext(BreedDataContext);
+    console.log(breedData)
     return (
         <>
             <header>
@@ -22,6 +24,7 @@ const BreedDescription = () => {
                         <p><span>Origin:</span> {breedData.origin}</p>
                         <p><span>Temperament:</span> {breedData.temperament}</p>
                         <p><span>Durée de vie:</span> {breedData.life_span}</p>
+
                     </div>
 
                 </div>

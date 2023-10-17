@@ -36,16 +36,15 @@ const BreedImage = ({ breedID, breedName }) => {
     const handleClick = async (breed) => {
         try {
             const response = await axios.get(
-                `https://api.thedogapi.com/v1/breeds/search?q=${breed}`,
-                {
-                    headers: {
-                        "x-api-key": "YOUR_API_KEY",
-                    },
-                }
+                `https://api.thedogapi.com/v1/breeds/search?q=${breed}`, {
+                headers: {
+                    'x-api-key': `${API_KEY}`
+                },
+            }
             );
-            setBreedData(response.data[0]); // Assuming the response is an array with a single breed object
-            console.log(response.data[0])
-            navigate("/description"); // Navigate to the breed-details page
+            setBreedData(response.data[0]);
+
+            navigate("/description");
         } catch (error) {
             console.log(error);
         }
