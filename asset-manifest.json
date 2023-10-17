@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/The-Dog-API/static/css/main.c50f6c0c.css",
-    "main.js": "/The-Dog-API/static/js/main.b698913d.js",
+    "main.css": "/The-Dog-API/static/css/main.50a634b3.css",
+    "main.js": "/The-Dog-API/static/js/main.0556dd30.js",
     "index.html": "/The-Dog-API/index.html",
-    "main.c50f6c0c.css.map": "/The-Dog-API/static/css/main.c50f6c0c.css.map",
-    "main.b698913d.js.map": "/The-Dog-API/static/js/main.b698913d.js.map"
+    "main.50a634b3.css.map": "/The-Dog-API/static/css/main.50a634b3.css.map",
+    "main.0556dd30.js.map": "/The-Dog-API/static/js/main.0556dd30.js.map"
   },
   "entrypoints": [
-    "static/css/main.c50f6c0c.css",
-    "static/js/main.b698913d.js"
+    "static/css/main.50a634b3.css",
+    "static/js/main.0556dd30.js"
   ]
 }
