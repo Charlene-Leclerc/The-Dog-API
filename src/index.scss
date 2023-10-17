@@ -2,6 +2,7 @@
 @import './styles/nav.scss';
 @import './styles/dog.scss';
 @import './styles/home.scss';
+@import './styles/description.scss';
 
 * {
   margin: 0;
@@ -24,6 +25,6 @@ html {
 
 section {
   min-height: 100vh;
-  padding: 5rem 2% 2rem;
+  padding: 10rem 9% 2rem;
 
 }

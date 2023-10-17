@@ -3,6 +3,21 @@ $peps-blue: #71def7;
 $text-color: #f5ffff;
 $span-color: #00687a;
 
+@mixin heading() {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    color: $span-color;
+    margin-bottom: 5rem;
+}
+
+@mixin flex($justify: center, $dir: line, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $dir;
+}
+
 span {
     color: $span-color;
 }

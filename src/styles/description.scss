@@ -1,0 +1,38 @@
+@use 'main';
+
+.description {
+    width: 100vw;
+
+    h1 {
+        @include main.heading();
+    }
+
+    .content {
+        width: 100%;
+        @include main.flex($justify: space-around, $align: flex-start);
+
+        .dog-img {
+            width: 800px;
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 2rem;
+            }
+        }
+
+        .data {
+            span {
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+
+}

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BASE_URL, API_KEY } from '../../utils/API';
 import axios from 'axios';
-import BreedImage from './BreedImage';
 import Pagination from '../Pagination'
+import DogsImage from './DogsImage';
 
 const BreedList = () => {
     const [breeds, setBreeds] = useState([]);
@@ -40,9 +40,7 @@ const BreedList = () => {
     const paginatedBreeds = breeds.slice(offset, offset + itemsPerPage);
 
     useEffect(() => {
-
         const fetchAllBreeds = async () => {
-
             try {
                 await axios.get(`${BASE_URL}v1/breeds`, {
                     headers: {
@@ -68,20 +66,13 @@ const BreedList = () => {
                 <input type="text" onChange={handleSearch} placeholder="Rechercher une race de chien" />
             </div>
             <div className="container">
-                {searchResults.length == 0 ? (
+                {searchResults.length === 0 ? (
                     paginatedBreeds.map((breed) => (
-                        <div className="dog-box" id="dog-box" key={breed.id}>
-
-                            <h2 ><span>{breed.name}</span></h2>
-                            <BreedImage breedID={breed.id} />
-                        </div>
+                        <DogsImage id={breed.id} name={breed.name} key={breed.id} />
                     ))
                 ) : (
                     searchResults.map(breed => (
-                        <div className="dog-box" id="dog-box" key={breed.id}>
-                            <h2 ><span>{breed.name}</span></h2>
-                            <BreedImage breedID={breed.id} />
-                        </div>
+                        <DogsImage id={breed.id} name={breed.name} key={breed.id} />
                     ))
                 )}
 

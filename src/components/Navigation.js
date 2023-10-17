@@ -15,7 +15,7 @@ const Navigation = () => {
             <Container>
                 <div className="brand-box">
 
-                    <Link className='nav-brand' to='home' smooth={true} duration={100}>MY DOG FRIENDLY</Link>
+                    <Link className='nav-brand' to='/' smooth={true} duration={100}>MY DOG FRIENDLY</Link>
                 </div>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
