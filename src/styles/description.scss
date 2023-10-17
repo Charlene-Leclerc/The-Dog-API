@@ -32,6 +32,16 @@
                 font-size: 1.5rem;
                 line-height: 2.5rem;
             }
+
+            .likes {
+                @include main.flex($justify: left);
+
+
+
+                .css-19ddtml-Simple {
+                    font-size: 1.5rem;
+                }
+            }
         }
     }
 
