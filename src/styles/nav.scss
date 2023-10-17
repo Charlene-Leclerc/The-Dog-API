@@ -27,6 +27,21 @@
 
         .collapse {
 
+            .navbar-nav {
+                @include main.flex();
+
+
+
+                .fa-right-from-bracket {
+                    font-size: 2rem;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: main.$span-color !important;
+                    }
+                }
+            }
+
             .nav-activ {
                 color: main.$span-color;
                 text-decoration: underline;
@@ -44,6 +59,7 @@
                     color: main.$span-color;
                 }
             }
+
 
 
         }
